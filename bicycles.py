@@ -2,9 +2,21 @@
 ##Will work in conjunction with main.py within the bicycles folder
 
 class Bicycle(object):
-	def __init__(self, model, weight, cost):
+	def __init__(self, model, wheels, frame):
 		self.model = model
 		## i want the model to automatically default to whatever the name is??
+		self.weight = wheels.weight*2 + frame.weight
+		self.cost = wheels.cost*2 + frame.cost
+
+class Wheels(object):
+	def __init__(self, model, weight, cost):
+		self.model = model
+		self.weight = weight
+		self.cost = cost
+
+class Frames(object):
+	def __init__(self, material, weight, cost):
+		self.material = material
 		self.weight = weight
 		self.cost = cost
 
