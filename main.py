@@ -9,11 +9,7 @@
 ##Here's the initialization of characters script
 
 import random
-from bicycles import Customer
-from bicycles import Bikeshop
-from bicycles import Bicycle
-from bicycles import Wheels
-from bicycles import Frames
+from bicycles import Customer, Bikeshop, Bicycle, Wheels, Frames
 
 print ("You have initialized the Bike Shop program!\n")
 
@@ -79,6 +75,8 @@ for customer in tina, pete, sue:
 		print ("{} bought a {}, costing ${}, and has ${} left".format(customer.name, customer.bikesOwned[0], choice[2], customer.money))
 	except:
 		print ("{} can't afford any of the bikes in stock.".format(customer.name))
+
+print()
 
 #check inventory again
 

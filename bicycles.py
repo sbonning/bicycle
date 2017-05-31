@@ -8,6 +8,9 @@ class Bicycle(object):
 		self.weight = wheels.weight*2 + frame.weight
 		self.cost = wheels.cost*2 + frame.cost
 
+	def __str__(self):
+		return self.model
+
 class Wheels(object):
 	def __init__(self, model, weight, cost):
 		self.model = model
